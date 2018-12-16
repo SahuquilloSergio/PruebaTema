@@ -19,9 +19,11 @@
 			<div class="navigation-top">
 				<div class="wrap">
 					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
+					
 				</div><!-- .wrap -->
 			</div><!-- .navigation-top -->
 		<?php endif; ?>
+		
 			
 			<? php
 			if (have_posts()) :
@@ -31,16 +33,16 @@
 				endwhile;
 			endif;?>
 		
-		
+	
 		
 		
 		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
-
-		
+		<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+			
 		
 
 	</header><!-- #masthead -->
-
+	
 	<?php
 
 	

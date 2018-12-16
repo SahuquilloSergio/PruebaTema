@@ -19,9 +19,10 @@ function my_register_sidebars() {
 
 add_action( 'widgets_init', 'my_register_sidebars' );
 
-function register_my_menus() {
-  register_nav_menus('header-menu', __( 'Header Menu' ));
-  }
-add_action( 'init', 'register_my_menus' );
+
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
 
 ?>
