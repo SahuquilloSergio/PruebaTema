@@ -12,3 +12,29 @@
 */
 
 @import url("../twentyseventeen/style.css");
+
+
+
+/*Cambiamos la fuente, el tamaño, y el color de p*/
+p {
+font-family: Courier New;
+font-size: 20px;
+color: purple;
+}
+
+/*Cambiamos la fuente del header */
+header{ font-family: 'Georgia'; }
+
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+
+/* The element to apply the animation to */
+
+ul{
+ text-shadow: 2px 2px 5px blue;
+}
+
+#colophon .wrap .menu-social ul{
+ list-style:none;
+}

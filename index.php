@@ -1,20 +1,10 @@
 <?php
-
-
-			if ( have_posts() ) :
-
-				/* Start the Loop */
-				if ( have_posts()){
-					while(have_posts){
-						
-					
-					the_post();
-					
-					the_content();
-					}
-				}
-
-			endif;
-			?>
-
-
+get_header();
+if (have_posts()) :
+   while (have_posts()) :
+      the_post();
+      the_content();
+   endwhile;
+endif;
+get_footer(); 
+?>
